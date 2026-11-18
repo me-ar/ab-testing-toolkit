@@ -1,0 +1,80 @@
+{
+  "n_control": 44700,
+  "n_treatment": 45489,
+  "srm_p_value": 0.008607987810836262,
+  "srm_flag": false,
+  "outlier_rounds_removed": 49854,
+  "holm_bonferroni_reject": {
+    "retention_7": true,
+    "sum_gamerounds_mw": false,
+    "retention_1": false
+  },
+  "mde_rel_retention_7_at_80pct_power": 0.03895388575943993,
+  "n_needed_for_1pct_rel_lift_r7": 670977,
+  "n_needed_for_2pct_rel_lift_r7": 168380,
+  "peeking": {
+    "fpr_fixed_horizon": 0.043,
+    "fpr_with_peeking": 0.22
+  },
+  "results": {
+    "retention_1": {
+      "metric": "retention_1",
+      "control_mean": 0.4481979462627799,
+      "treatment_mean": 0.44228274967574577,
+      "abs_diff": -0.005915196587034155,
+      "rel_lift": -0.013197732466998088,
+      "ci_low": -0.012402509778563664,
+      "ci_high": 0.0005721166044953541,
+      "p_value": 0.0739207603418346,
+      "test": "two-proportion z-test",
+      "significant": false,
+      "bayes_p_gate40_better": 0.036835,
+      "bayes_lift_95": [
+        -0.027443555018404776,
+        0.0012732985192583659
+      ],
+      "bayes_expected_loss_ship_gate40": 0.005974711207500987,
+      "bootstrap_ci": [
+        -0.012399996111567323,
+        0.0005295588284177873
+      ]
+    },
+    "retention_7": {
+      "metric": "retention_7",
+      "control_mean": 0.19018322557551623,
+      "treatment_mean": 0.18200004396667327,
+      "abs_diff": -0.00818318160884296,
+      "rel_lift": -0.04302788315888383,
+      "ci_low": -0.013263369909537494,
+      "ci_high": -0.003102993308148426,
+      "p_value": 0.0015917731773993442,
+      "test": "two-proportion z-test",
+      "significant": true,
+      "bayes_p_gate40_better": 0.000855,
+      "bayes_lift_95": [
+        -0.06884086368470137,
+        -0.016497448043083035
+      ],
+      "bayes_expected_loss_ship_gate40": 0.008188615034688984,
+      "bootstrap_ci": [
+        -0.013222539741328573,
+        -0.002994610441669039
+      ]
+    },
+    "sum_gamerounds": {
+      "metric": "sum_gamerounds",
+      "control_mean": 51.342110561757536,
+      "treatment_mean": 51.29877552814966,
+      "abs_diff": -0.04333503360787461,
+      "rel_lift": -0.0008440446474390352,
+      "ci_low": -1.383567501642639,
+      "ci_high": 1.2968974344268898,
+      "p_value": 0.949468621546446,
+      "test": "Welch t-test",
+      "significant": false,
+      "mann_whitney_p": 0.05089155279145376,
+      "median_control": 17.0,
+      "median_treatment": 16.0
+    }
+  }
+}
